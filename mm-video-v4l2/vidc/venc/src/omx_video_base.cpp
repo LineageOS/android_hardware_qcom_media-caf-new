@@ -3313,6 +3313,7 @@ OMX_ERRORTYPE  omx_video::empty_this_buffer_proxy(OMX_IN OMX_HANDLETYPE         
         fd = m_pInput_pmem[nBufIndex].fd;
         DEBUG_PRINT_LOW("ETB (color-converted) fd = %d, size = %lu",
                 fd, buffer->nFilledLen);
+#ifndef MAX_RES_720P
     } else if (m_sInPortDef.format.video.eColorFormat ==
                     OMX_COLOR_FormatYUV420SemiPlanar) {
             //For the case where YUV420SP buffers are qeueued to component
@@ -3325,6 +3326,7 @@ OMX_ERRORTYPE  omx_video::empty_this_buffer_proxy(OMX_IN OMX_HANDLETYPE         
                     return OMX_ErrorUndefined;
             }
     }
+#endif
 #ifdef _MSM8974_
     if (dev_empty_buf(buffer, pmem_data_buf,nBufIndex,fd) != true)
 #else
