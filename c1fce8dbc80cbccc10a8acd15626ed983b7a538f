@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a57f1b5_b3a3424f",
+        "filename": "mm-core/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-01-24T10:33:34Z",
+      "side": 1,
+      "message": "Might as well update this as well.",
+      "revId": "c1fce8dbc80cbccc10a8acd15626ed983b7a538f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
