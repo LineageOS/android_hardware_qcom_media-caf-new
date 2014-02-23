@@ -442,6 +442,8 @@ enum OMX_QCOM_EXTN_INDEXTYPE
 
     OMX_QcomIndexParamPerfLevel = 0x7F000032,
 
+    OMX_QcomIndexParamSetMVSearchrange = 0x7F00003C,
+
     OMX_QcomIndexParamH264VUITimingInfo = 0x7F000033,
 
     OMX_QcomIndexParamPeakBitrate = 0x7F000034,
